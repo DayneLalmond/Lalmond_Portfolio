@@ -1,4 +1,165 @@
 * {
-  font-family: Arial;
-  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.developer {
+  color: rgb(125, 125, 125);
+}
+
+.developer:hover {
+  color: crimson;
+}
+
+.developer:active {
+  color: transparent;
+  cursor: help;
+}
+
+.click {
+  border-style: solid;
+  margin: 4px 2px auto;
+  padding: 4px 24px;
+  font-size: 16px;
+}
+
+.click:hover {
+  border-style: dotted;
+  color: crimson;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-left: 800px;
+  display: inline-flex;
+  align-items: right;
+}
+
+.sidenav {
+  word-spacing: 100px;
+  padding-bottom: 10px;
+  border-bottom: thick ridge rgb(250, 209, 209);
+}
+
+body {
+  background: beige;
+}
+
+body header {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-image: linear-gradient(180deg, rgb(250, 209, 209), beige);
+}
+
+ul {
+  list-style-type: none;
+ }
+
+.about {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding-top: 100px;
+  color: rgb(125, 125, 125);
+}
+
+.work {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding-top: 100px;
+  color: rgb(125, 125, 125);
+}
+
+.contact {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding-top: 100px;
+  color: rgb(125, 125, 125);
+}
+
+.line {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  opacity: 0;
+  margin-left: 100px;
+  width: 300px;
+  height: 600px;
+  border-right: thick ridge rgb(250, 209, 209);
+  animation: line 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes line {
+  from {
+    padding: 300px;
+    opacity: 0;
+  }
+  to {  
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+    }
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(8px);
+  background-image: url(../images/comic.jpg);
+  background-size: cover;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px rgb(125, 125, 125);
+  border-radius: 4px;
+  border-style: double;
+  animation: avatar 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes avatar {
+  from {
+    opacity: 0;}
+  to {
+    width: 100px;
+    height: 100px;
+    cursor: not-allowed;
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.test {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(8px);
+  background-size: 10%;
+  background-color: #000000;
+  opacity: 0.4;
+  width: 200px;
+  height: 200px;
+  border: 4px rgb(125, 125, 125);
+  border-radius: 10px;
+  border-style: double;
+}
+
+.test:hover {
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  filter: blur(0px);
+  transition: all ease;
+  transition-duration: 1s;
+  opacity: 1;
 }
