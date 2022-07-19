@@ -3,7 +3,7 @@
 ## Description
 
 A rough draft of my portfolio developed with the use of HTML and CSS code only. My experience with these programs
-upon this assignment allowed me aquire a better understanding of how tags associate with their element. I enjoyed
+upon this assignment allowed me to aquire a better understanding of how tags associate with their element. I enjoyed
 experimenting with CSS properties to give this project more depth.
 
 ## Features

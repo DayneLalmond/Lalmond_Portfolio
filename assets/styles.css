@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
   filter: blur(80%);
   padding-inline: 8%;
-  animation: blur 3s;
+  animation: blur 2s;
   animation-fill-mode: both;
 }
 /* Animation made for the initial impression of the webpage */
@@ -16,7 +16,7 @@ html {
   to {
     opacity: 1;
     filter: blur(0%);
-    padding-top: 2%;
+    padding-top: 1.5%;
     padding-bottom: 2%;
     }
 }
@@ -26,7 +26,7 @@ html {
   padding: 20px;
   text-align: center;
   font-size: 20px;
-  background-image: linear-gradient(180deg, rgb(200, 250, 225), beige);
+  background: linear-gradient(180deg, rgb(200, 250, 225), beige);
   box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
 }
 
@@ -45,8 +45,8 @@ body {
 
 /* Profile image displayed here */
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 4px rgb(125, 125, 125);
   border-radius: 4px;
   border-style: double;
@@ -92,7 +92,7 @@ a:active {
 }
 
 .about:hover {
-  border-bottom: thin dotted #25273c;
+  border-bottom: thin solid #25273c;
 }
 
 h3 {
@@ -113,13 +113,14 @@ img:nth-child(1) {
   margin: 25px;
   align-items: center;
   display: inline-block;
-  border: thin solid #25273c;
+  border: thin dotted #25273c;
   opacity: 0.1;
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
 img:nth-child(1):hover {
+  border: thin solid #25273c;
   border-radius: 4%;
   box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
   opacity: 1;
@@ -129,21 +130,10 @@ img:nth-child(1):hover {
   padding-top: 15px;
 }
 
-.contact {
-  opacity: 0.08;
-  font-size: 20px;
-}
-
-.contact:hover {
-  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
-  opacity: 1;
-  transition: all 0.2s ease-in;
-}
-
 /* Adding a tooltip to the email to view the address before clicking on it */
 .tooltip {
   position: relative;
-  right: 100px;
+  right: 125px;
   cursor: pointer;
   font-size: 24px;
 }
