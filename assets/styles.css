@@ -1,4 +1,4 @@
-/*HTML covers the behavior of the entire page*/
+/* HTML covers the behavior of the entire page */
 html {
   scroll-behavior: smooth;
   filter: blur(80%);
@@ -6,7 +6,7 @@ html {
   animation: blur 3s;
   animation-fill-mode: both;
 }
-
+/* Animation made for the initial impression of the webpage */
 @keyframes blur {
   from {
     opacity: 0;
@@ -43,7 +43,7 @@ body {
   cursor: default;
 }
 
-/*Profile image displayed here*/
+/* Profile image displayed here */
 .avatar {
   width: 100px;
   height: 100px;
@@ -70,7 +70,6 @@ a:link {
   word-spacing: 10px;
 }
 
-/*Hovering over this will add Crimson to it so the user knows it is selected*/
 a:hover {
   color: crimson;
 }
@@ -78,8 +77,8 @@ a:hover {
 a:active {
   color: azure;
 }
-
-.topnav {
+/* For the line underneath nav */
+.navline {
   padding-bottom: 20px;
   border-bottom: thin solid #25273c;
 }
@@ -141,7 +140,7 @@ img:nth-child(1):hover {
   transition: all 0.2s ease-in;
 }
 
-/*Adding a tooltip to the Mail element to view the email address*/
+/* Adding a tooltip to the email to view the address before clicking on it */
 .tooltip {
   position: relative;
   right: 100px;
