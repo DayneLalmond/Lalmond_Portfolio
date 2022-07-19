@@ -19,7 +19,7 @@ html {
     padding-top: 1.5%;
     padding-bottom: 2%;
     }
-}
+  }
 
 #box-shadow {
   margin: 10px;
@@ -35,15 +35,14 @@ body {
 }
 
 .name {
+  display: block;
   color: #25273c;
-  margin-top: 1px;
-  width: 25%;
-  background-color: beige;
-  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
+  margin: 20px;
+  width: 30%;
   cursor: default;
 }
 
-/* Profile image displayed here */
+/* Comic profile image displayed here */
 .avatar {
   width: 200px;
   height: 200px;
@@ -58,6 +57,7 @@ body {
 }
 
 a {
+  display: inline-block;
   color: blue;
 }
 
@@ -76,7 +76,8 @@ a:hover {
 
 a:active {
   color: azure;
-}
+} 
+
 /* For the line underneath nav */
 .nav-line {
   padding-bottom: 20px;
@@ -89,10 +90,7 @@ a:active {
   color: #25273c;
   font-size: 20px;
   font-style: italic;
-}
-
-.about:hover {
-  border-bottom: thin solid #25273c;
+  transition: all 0.1s ease-in-out;
 }
 
 h3 {
@@ -101,25 +99,26 @@ h3 {
 
 section {
   color:rgb(125, 125, 125);
-  display: flex;
-  flex: wrap;
+}
+/* For the line above work */
+.section-line {
+  border-top: thin solid #25273c;
 }
 
-p {
-  width: 80%;
+section div {
+  display: inline;
+  margin: 25px;
 }
 
 img:nth-child(1) {
-  margin: 25px;
-  align-items: center;
-  display: inline-block;
+  transform: scale(0.8, 0.8);
   border: thin dotted #25273c;
   opacity: 0.1;
-  font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
 img:nth-child(1):hover {
+  transform: scale(1.0, 1.0);
   border: thin solid #25273c;
   border-radius: 4%;
   box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
@@ -127,21 +126,22 @@ img:nth-child(1):hover {
 }
 
 .material-icons {
+  display: flex;
+  flex-direction: column;
   padding-top: 15px;
 }
 
 /* Adding a tooltip to the email to view the address before clicking on it */
 .tooltip {
   position: relative;
-  right: 125px;
   cursor: pointer;
   font-size: 24px;
 }
 
 .tooltip .tooltiptext {
   position: absolute;
-  top: 100%;
-  left: -25%;
+  bottom: -50%;
+  left: -15%;
   color: #25273c;
   font-style: italic;
   visibility: hidden;
