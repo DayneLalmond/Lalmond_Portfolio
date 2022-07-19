@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <title>Dayne Lalmond</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./assets/styles.css" rel="stylesheet">
-        <link href="./images/favicon.ico" rel="icon" type="image/favicon" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--This image is for the title-->
+        <link href="./images/favicon.ico" rel="icon" type="image/favicon">
     </head>
-    <body class="visual">
-        <header>
-            <h1>Dayne Lalmond</h1>
-                <div class="avatar"></div>
-            <h2><span class="developer">Web Developer</span></h2>
-            <label class="checkbox" for="checkboxId">
-                <input class="checkboxInput" type="checkbox" name="myCheckboxName" id="checkboxId">Check
-            </label>
-            <nav class="sidenav">
-                <a href="#aboutMe"><button type="button" class="click"><strong>About</strong></button></a>
-                <a href="#myWork"><button type="button" class="click"><strong>Work</strong></button></a>
-                <a href="#contactMe"><button type="button" class="click"><strong>Contact</strong></button></a>
-            </nav>
-            <div class="line">    
-                <ul>
-                    <li>
-                        <h3 class="about" id="aboutMe">About</h3>
-                    </li>
-                    <li>
-                        <h3 class="work" id="myWork">Work</h3>
-                    </li>
-                    <li>
-                        <h3 class="contact" id="contactMe">Contact</h3>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
+    <body>
+        <div id="box-shadow">
+            <header>
+                <h1 class="name">Dayne Lalmond</h1>
+                <img src="images/comic.jpg" class="avatar" alt="Profile Image">
+                <h2 class="developer">Student Dev</h2>
+                <nav class="topnav">
+                    <!--Nav links are above the horizontal line-->
+                    <a href="#aboutMe"><i class="material-icons">person</i><strong>About</strong></a>
+                    <a href="#myWork"><i class="material-icons">work_history</i><strong>Work</strong></a>
+                    <a href="#contactMe"><i class="material-icons">mail</i><strong>Contact</strong></a>
+                </nav>
+            </header>
+            <br>
+            <main>
+                <!--Divide the nav which the listed content is linked to-->
+                <section>
+                    <h3 id="aboutMe">About</h3>
+                    <p class="about">Hello, my name is Dayne. I am a student, and an aspiring web developer.
+                        You are viewing a rough draft of my portfolio. Initially, the idea was to showcase
+                        my skills using basic HTML and CSS coding. It quickly became an exciting assignment.
+                        As I continue to improve my skillset, I will apply new concepts to further advance
+                        my portfolio and additional projects. I am looking forward to the coming changes
+                        I hope to feature later on. For any faulty details or tips on the current development,
+                        please remember to share feedback. I appreciate constructive criticism throughout all
+                        my drafts. An anchor element attached to my email is provided below.
+                    </p>
+                </section>
+                <br>
+                <section>
+                    <h3 id="myWork">Work</h3>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 1">
+                    </div>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 2">
+                    </div>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 3">
+                    </div>
+                </section>
+                <br>
+                <section>
+                    <h3></h3>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 4">
+                    </div>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 5">
+                    </div>
+                    <div>
+                        <img src="./images/documents.png" alt="Project 6">
+                    </div>
+                </section>
+                <br>
+                <section>
+                    <h3 id="contactMe">Contact</h3>
+                    <p>
+                        <!--Hovering over the anchor will display my email via tooltip. Clicking it will redirect user to an email application-->
+                        <a class="tooltip" href="mailto:dlalmondo@gmail.com"><i
+                                class="material-icons">chat</i><strong>Email</strong><span
+                                class="tooltiptext">dlalmondo@gmail.com</span></a>
+                    </p>
+                </section>
+                <br>
+            </main>
+        </div>
     </body>
+
+    <footer>
+        <i class="material-icons">logo_dev</i>
+    </footer>
+
 </html>
-
-

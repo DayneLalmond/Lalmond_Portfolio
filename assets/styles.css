@@ -1,177 +1,167 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/*HTML covers the behavior of the entire page*/
+html {
+  scroll-behavior: smooth;
+  filter: blur(80%);
+  padding-inline: 8%;
+  animation: blur 3s;
+  animation-fill-mode: both;
 }
 
-.developer {
-  color: rgb(125, 125, 125);
+@keyframes blur {
+  from {
+    opacity: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
 }
 
-.developer:hover {
-  color: crimson;
-}
-
-.developer:active {
-  color: transparent;
-  cursor: help;
-}
-
-.click {
-  border-style: solid;
-  margin: 4px 2px auto;
-  padding: 4px 24px;
-  font-size: 16px;
-}
-
-.click:hover {
-  border-style: dotted;
-  color: crimson;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.checkbox {
-  margin-left: 800px;
-  display: inline-flex;
-  align-items: right;
-}
-
-.sidenav {
-  word-spacing: 100px;
-  padding-bottom: 10px;
-  border-bottom: thin solid rgb(0, 0, 0);
+#box-shadow {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-image: linear-gradient(180deg, rgb(200, 250, 225), beige);
+  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
 }
 
 body {
   background: beige;
 }
 
-.visual {
-  animation: visual 3s;
-  animation-fill-mode: both;
+.name {
+  color: #25273c;
+  margin-top: 1px;
+  width: 25%;
+  background-color: beige;
+  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
+  cursor: default;
 }
 
-@keyframes visual {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    }
-}
-
-body header {
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  background-image: linear-gradient(180deg, rgb(200, 250, 225), beige);
-}
-
-ul {
-  list-style-type: none;
- }
-
-.about {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  margin-left: 10px;
-  padding-top: 100px;
-  color: rgb(125, 125, 125);
-}
-
-.work {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  margin-left: 10px;
-  padding-top: 100px;
-  color: rgb(125, 125, 125);
-}
-
-.contact {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  margin-left: 10px;
-  padding-top: 100px;
-  color: rgb(125, 125, 125);
-}
-
-.line {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  opacity: 0;
-  margin-left: 100px;
-  width: 300px;
-  height: 600px;
-  border-right: thin solid black;
-  animation: line 3s;
-  animation-fill-mode: both;
-}
-
-@keyframes line {
-  from {
-    padding: 600px;
-    opacity: 0;
-  }
-  to {  
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-    }
-}
-
+/*Profile image displayed here*/
 .avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: blur(8px);
-  background-image: url(../images/comic.jpg);
-  background-size: cover;
-  opacity: 0;
   width: 100px;
   height: 100px;
   border: 4px rgb(125, 125, 125);
   border-radius: 4px;
   border-style: double;
-  animation: avatar 3s;
-  animation-fill-mode: both;
 }
 
-@keyframes avatar {
-  from {
-    opacity: 0;}
-  to {
-    cursor: not-allowed;
-    filter: blur(0px);
-    opacity: 1;
-  }
+.developer {
+  color: rgb(125, 125, 125);
+  cursor: default;
 }
 
-.test {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: blur(8px);
-  background-size: 10%;
-  background-color: #000000;
-  opacity: 0.4;
-  width: 200px;
-  height: 200px;
-  border: 4px rgb(125, 125, 125);
-  border-radius: 10px;
-  border-style: double;
+a {
+  color: blue;
 }
 
-.test:hover {
-  cursor: pointer;
-  width: 250px;
-  height: 250px;
-  filter: blur(0px);
-  transition: all ease;
-  transition-duration: 1s;
+a:link {
+  margin: 4px 2px auto;
+  padding: 4px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+/*Hovering over this will add Crimson to it so the user knows it is selected*/
+a:hover {
+  color: crimson;
+}
+
+a:active {
+  color: azure;
+}
+
+.topnav {
+  padding-bottom: 20px;
+  border-bottom: thin solid #25273c;
+}
+
+.about {
+  padding: 1%;
+  padding-bottom: 60px;
+  color: #25273c;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.about:hover {
+  border-bottom: thin dotted #25273c;
+}
+
+h3 {
+  width: 20%;
+}
+
+section {
+  color:rgb(125, 125, 125);
+  display: flex;
+  flex: wrap;
+}
+
+p {
+  width: 80%;
+}
+
+img:nth-child(1) {
+  margin: 25px;
+  align-items: center;
+  display: inline-block;
+  border: thin solid #25273c;
+  opacity: 0.1;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+img:nth-child(1):hover {
+  border-radius: 4%;
+  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
   opacity: 1;
+}
+
+.material-icons {
+  padding-top: 15px;
+}
+
+.contact {
+  opacity: 0.08;
+  font-size: 20px;
+}
+
+.contact:hover {
+  box-shadow: 0 4px 8px 0 #25273c, 0 6px 8px 0 #25273c;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+/*Adding a tooltip to the Mail element to view the email address*/
+.tooltip {
+  position: relative;
+  right: 100px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  top: 100%;
+  left: -25%;
+  color: #25273c;
+  font-style: italic;
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+footer {
+  text-align: center;
 }
