@@ -78,7 +78,7 @@ a:active {
   color: azure;
 }
 /* For the line underneath nav */
-.navline {
+.nav-line {
   padding-bottom: 20px;
   border-bottom: thin solid #25273c;
 }
