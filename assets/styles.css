@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: beige;
 }
 
@@ -86,6 +87,8 @@ a:active {
 
 .about {
   padding: 1%;
+  margin-left: 80px;
+  margin-right: 80px;
   padding-bottom: 60px;
   color: #25273c;
   font-size: 20px;
@@ -107,7 +110,6 @@ section {
 
 section div {
   display: inline;
-  margin: 25px;
 }
 
 img:nth-child(1) {
@@ -149,6 +151,7 @@ img:nth-child(1):hover {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  color: #25273c;
 }
 
 footer {
